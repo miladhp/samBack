@@ -1,0 +1,205 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "car"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Manufacturer": {
+      "type": "string",
+      "required": true
+    },
+    "Model": {
+      "type": "string",
+      "required": true
+    },
+    "Year": {
+      "type": "biginteger"
+    },
+    "Mileage": {
+      "type": "string"
+    },
+    "Fuel": {
+      "type": "enumeration",
+      "required": true,
+      "default": "gasoline",
+      "enum": [
+        "gasoline",
+        "diesel",
+        "electricity",
+        "hydrogen",
+        "ethanol",
+        "biodiesel"
+      ]
+    },
+    "Transmission": {
+      "type": "enumeration",
+      "required": true,
+      "default": "automatic",
+      "enum": [
+        "manual",
+        "automatic",
+        "CVT"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tags": {
+      "type": "customField",
+      "customField": "plugin::tagsinput.tags"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Sedan",
+        "Compact Sedan",
+        "Mid-size Sedan",
+        "Full-size Sedan",
+        "Luxury Sedan",
+        "Executive Sedan",
+        "Sports Sedan",
+        "Coupe",
+        "Compact Coupe",
+        "Luxury Coupe",
+        "Sport Coupe",
+        "Four-door Coupe",
+        "Hatchback",
+        "Three-door Hatchback",
+        "Five-door Hatchback",
+        "Hot Hatch",
+        "Convertible",
+        "Soft-top Convertible",
+        "Hardtop Convertible",
+        "Roadster",
+        "Cabriolet",
+        "Targa Top",
+        "Wagon",
+        "Station Wagon",
+        "Crossover Wagon",
+        "Shooting Brake",
+        "SUV",
+        "Compact SUV",
+        "Mid-size SUV",
+        "Full-size SUV",
+        "Luxury SUV",
+        "Off-Road SUV",
+        "Crossover SUV",
+        "Pickup Truck",
+        "Compact Pickup",
+        "Mid-size Pickup",
+        "Full-size Pickup",
+        "Heavy-Duty Pickup",
+        "Electric Pickup",
+        "Van",
+        "Minivan",
+        "Cargo Van",
+        "Passenger Van",
+        "Camper Van",
+        "Sports Car",
+        "Entry-Level Sports Car",
+        "Luxury Sports Car",
+        "Track-Focused Sports Car",
+        "Electric Sports Car",
+        "Supercar",
+        "Mid-Engine Supercar",
+        "AWD Supercar",
+        "Luxury Supercar",
+        "Hypercar",
+        "Electric Hypercar",
+        "Hybrid Hypercar",
+        "Track Hypercar",
+        "Muscle Car",
+        "Classic Muscle Car",
+        "Modern Muscle Car",
+        "Luxury Car",
+        "Executive Luxury Car",
+        "Flagship Luxury Car",
+        "Performance Luxury Car",
+        "Classic Car",
+        "Restored Classic",
+        "Original Classic",
+        "Collector’s Edition",
+        "Vintage Car",
+        "Pre-WWII Vintage",
+        "Post-War Vintage",
+        "Antique Car",
+        "Brass Era",
+        "Veteran Car",
+        "Retro Car",
+        "Retro-Modern",
+        "Neo-Classic",
+        "Electric Vehicle",
+        "Electric Sedan",
+        "Electric SUV",
+        "Hybrid",
+        "Mild Hybrid",
+        "Full Hybrid",
+        "Series Hybrid",
+        "Parallel Hybrid",
+        "Plug-in Hybrid",
+        "PHEV Sedan",
+        "PHEV SUV",
+        "Diesel",
+        "Diesel Sedan",
+        "Diesel SUV",
+        "Diesel Truck",
+        "Hydrogen Fuel Cell",
+        "Hydrogen Sedan",
+        "Hydrogen SUV",
+        "Family Car",
+        "Compact Family Car",
+        "Three-row Family SUV",
+        "Minivan Family",
+        "City Car",
+        "Microcar",
+        "Compact Hatchback",
+        "Commuter Car",
+        "Efficient Sedan",
+        "Hybrid Commuter",
+        "Taxi",
+        "Sedan Taxi",
+        "Van Taxi",
+        "Electric Taxi",
+        "Police Vehicle",
+        "Pursuit Sedan",
+        "SUV Police Cruiser",
+        "Utility Vehicle",
+        "Work Van",
+        "Flatbed Truck",
+        "Fleet Pickup",
+        "Off-Road",
+        "Rock Crawler",
+        "Overlander",
+        "Baja Truck",
+        "Track Car",
+        "Race-ready Coupe",
+        "Street-Legal Track Car"
+      ]
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    }
+  }
+}
