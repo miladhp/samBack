@@ -515,7 +515,7 @@ export interface ApiCarCar extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.RichText;
-    Fuel: Schema.Attribute.Enumeration<
+    fuel: Schema.Attribute.Enumeration<
       ['gasoline', 'diesel', 'electricity', 'hydrogen', 'ethanol', 'biodiesel']
     > &
       Schema.Attribute.Required &
@@ -523,23 +523,23 @@ export interface ApiCarCar extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::car.car'> &
       Schema.Attribute.Private;
-    Manufacturer: Schema.Attribute.String & Schema.Attribute.Required;
+    manufacturer: Schema.Attribute.String & Schema.Attribute.Required;
     media: Schema.Attribute.Media<'images' | 'videos', true>;
-    Mileage: Schema.Attribute.String;
-    Model: Schema.Attribute.String & Schema.Attribute.Required;
+    mileage: Schema.Attribute.String;
+    model: Schema.Attribute.String & Schema.Attribute.Required;
     price: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
     shortDescription: Schema.Attribute.String;
     tags: Schema.Attribute.JSON &
       Schema.Attribute.CustomField<'plugin::tagsinput.tags'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
-    Transmission: Schema.Attribute.Enumeration<['manual', 'automatic', 'CVT']> &
+    transmission: Schema.Attribute.Enumeration<['manual', 'automatic', 'CVT']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'automatic'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Year: Schema.Attribute.BigInteger;
+    year: Schema.Attribute.BigInteger;
   };
 }
 

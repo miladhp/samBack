@@ -11,21 +11,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Manufacturer": {
+    "manufacturer": {
       "type": "string",
       "required": true
     },
-    "Model": {
+    "model": {
       "type": "string",
       "required": true
     },
-    "Year": {
+    "year": {
       "type": "biginteger"
     },
-    "Mileage": {
+    "mileage": {
       "type": "string"
     },
-    "Fuel": {
+    "fuel": {
       "type": "enumeration",
       "required": true,
       "default": "gasoline",
@@ -38,7 +38,7 @@
         "biodiesel"
       ]
     },
-    "Transmission": {
+    "transmission": {
       "type": "enumeration",
       "required": true,
       "default": "automatic",
